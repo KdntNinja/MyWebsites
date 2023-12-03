@@ -5,5 +5,11 @@
       "src": "api/index.py",
       "use": "@vercel/python"
     }
+  ],
+  "routes": [
+    { "src": "/welcome_page/(.*)", "dest": "api/index.py" },
+    { "src": "/magic8ball/(.*)", "dest": "api/index.py" },
+    { "src": "/file_upload/(.*)", "dest": "api/index.py" },
+    { "src": "/chatroom/(.*)", "dest": "api/index.py" }
   ]
 }

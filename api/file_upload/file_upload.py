@@ -10,7 +10,7 @@ MAX_FILE_SIZE = 1 * 1024 * 1024  # 1MB
 KEY = get_random_bytes(16)
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-UPLOAD_FOLDER = os.path.join(current_dir, 'Data')
+UPLOAD_FOLDER = os.path.join(current_dir, "Data")
 ALLOWED_EXTENSIONS = {
     "txt", "pdf", "png", "jpg", "jpeg", "gif", "py", "docx", "xlsx", "c", "cpp", "h", "hpp", "java", "class", "jar",
     "sln", "cs", "bat", "sh", "php", "html", "htm", "xhtml", "jhtml", "pl", "pm", "t", "pod", "m", "swift", "go", "py",
