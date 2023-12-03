@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module version="4">
-  <component name="PackageRequirementsSettings">
-    <option name="versionSpecifier" value="Greater or equal (&gt;=x.y.z)" />
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="jdk" jdkName="G:\IDE\Languages\Python\python.exe" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/api/chatroom/templates" />
-        <option value="$MODULE_DIR$/api/welcome_page/templates" />
-        <option value="$MODULE_DIR$/api/magic8ball/templates" />
-        <option value="$MODULE_DIR$/api/file_upload/templates" />
       </list>
     </option>
   </component>
