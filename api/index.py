@@ -1,7 +1,6 @@
-from flask import Flask
-""", request, jsonify
+from flask import Flask, request, jsonify
 from functools import wraps
-from http import HTTPStatus"""
+from http import HTTPStatus
 import secrets
 
 from welcome_page.welcome_page import welcome_page_bp
@@ -10,11 +9,12 @@ from magic8ball.magic8ball import magic8ball_bp
 from chatroom.chatroom import chat_room_bp
 
 
-"""def require_api_key(view_function):
+def require_api_key(view_function):
     @wraps(view_function)
     def decorated_function(*args, **kwargs):
         try:
             api_key = request.headers.get('X-API-KEY')
+            print(f"Received API key: {api_key}")  # Add this line
 
             if not api_key:
                 return jsonify({'error': 'Missing API key'}), HTTPStatus.UNAUTHORIZED
@@ -28,7 +28,7 @@ from chatroom.chatroom import chat_room_bp
 
     return decorated_function
 
-"""
+
 secret_key = secrets.token_hex(16)
 
 app = Flask(__name__)
@@ -41,6 +41,7 @@ app.register_blueprint(file_upload_bp, url_prefix="/file_upload")
 
 
 @app.before_request
+@require_api_key
 def before_request():
     pass
 
