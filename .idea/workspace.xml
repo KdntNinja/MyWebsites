@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="edbb3385-1d34-4ed0-927f-f9d9cc3817a8" name="Changes" comment="requirements.txt update" />
+    <list default="true" id="edbb3385-1d34-4ed0-927f-f9d9cc3817a8" name="Changes" comment="major push">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/magic8ball/magic8ball.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/magic8ball/magic8ball.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/magic8ball/templates/magic8ball_question.html" beforeDir="false" afterPath="$PROJECT_DIR$/api/magic8ball/templates/magic8ballquestion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/welcome_page/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/api/welcome_page/templates/welcome.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,6 +68,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -60,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701600211319</updated>
       <workItem from="1701600213492" duration="207000" />
-      <workItem from="1701600432714" duration="321000" />
+      <workItem from="1701600432714" duration="1098000" />
     </task>
     <task id="LOCAL-00001" summary="FIRST COMMIT">
       <option name="closed" value="true" />
@@ -94,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701600753713</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="major push">
+      <option name="closed" value="true" />
+      <created>1701600988413</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701600988413</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +133,10 @@
     <MESSAGE value="FIRST COMMIT" />
     <MESSAGE value="update" />
     <MESSAGE value="requirements.txt update" />
-    <option name="LAST_COMMIT_MESSAGE" value="requirements.txt update" />
+    <MESSAGE value="major push" />
+    <option name="LAST_COMMIT_MESSAGE" value="major push" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MyWebsites$index.coverage" NAME="index Coverage Results" MODIFIED="1701601471495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
   </component>
 </project>

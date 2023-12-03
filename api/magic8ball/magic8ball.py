@@ -41,5 +41,5 @@ def magic8ball_home():
     if request.method == "POST":
         question = request.form.get("question")
         answer = magic8ball_website.ask(question)
-        return render_template("magic8ballanswer.html", question=question, answer=answer)
-    return render_template("thirty_days.html")
+        return render_template("magic8ball_answer.html", question=question, answer=answer)
+    return render_template("magic8ball_question.html")
