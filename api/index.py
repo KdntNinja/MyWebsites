@@ -13,6 +13,3 @@ app.register_blueprint(welcome_page_bp)
 app.register_blueprint(chat_room_bp, url_prefix="/chatroom")
 app.register_blueprint(magic8ball_bp, url_prefix="/magic8ball")
 app.register_blueprint(file_upload_bp, url_prefix="/file_upload")
-
-if __name__ == "__main__":
-    app.run(debug=True)
