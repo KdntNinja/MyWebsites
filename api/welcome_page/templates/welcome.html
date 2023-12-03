@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div class="text-center">
+            <h1 class="display-4 mb-3 text-center"><strong>Welcome To My Website</strong></h1>
+            <label for="WebsiteSelect"></label><select id="WebsiteSelect" class="custom-select mb-3">
+                <option selected>Choose a website...</option>
+                <option value="/chatroom">Chat Room</option>
+                <option value="/magic8ball">Magic 8 Ball</option>
+                <option value="/file_upload">File Upload</option>
+                <option value="/thirty_days">Thirty Days</option>
+            </select>
+            <button onclick="goToWebsite()" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+    </div>
+    <script>
+        function goToWebsite() {
+            const website = document.getElementById("WebsiteSelect").value;
+            if (website === "Choose a website...") {
+                alert("Please select a website");
+            } else{
+                window.location = website;
+            }
+        }
+    </script>
+</body>
+</html>

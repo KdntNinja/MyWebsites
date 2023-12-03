@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat page for {{ username }}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex align-items-center justify-content-center" style="height: 100vh; background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                {% for message in chat_messages %}
+                    <p class="border-bottom pb-2">({{ message.timestamp }}) <strong>{{ message.from }}</strong>: {{ message.message}}</p>
+                {% endfor %}
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center align-items-center">
+                    <h1 class="text-center">Welcome, {{ username }}</h1>
+                </div>
+                <form method="POST" class="mb-4">
+                    <div class="form-group">
+                        <textarea cols="50" rows="4" name="message" id="message" class="form-control mb-3" placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let textbox = document.getElementById("message");
+
+        let timer = setTimeout(function() {
+            location.reload();
+        }, 3000);
+
+        textbox.onkeydown = function(e) {
+            clearTimeout(timer)
+
+            timer = setTimeout(function() {
+                location.reload()
+            }, 3000)
+        };
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Upload new File</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div>
+            <h1 class="text-center">Upload new File</h1>
+            <p class="text-center">Maximum file size: {{ max_file_size }}MB</p>
+            <form method=post enctype=multipart/form-data class="d-flex flex-column align-items-center">
+                <input type=file name=file class="form-control mb-3">
+                <input type=submit value=Upload class="btn btn-primary">
+            </form>
+            <a href="{{ url_for("file_upload.list_files") }}" class="btn btn-link mt-3">View uploaded files</a>
+            <a href="{{ url_for("welcome_page.home") }}" class="btn btn-danger mt-3" style="position: absolute; top: 0; left: 0;">Return to Welcome Screen</a>
+        </div>
+    </div>
+</body>
+</html>

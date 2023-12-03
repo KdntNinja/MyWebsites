@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Uploaded Files</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 text-center">Uploaded Files</h1>
+        <a href="{{ url_for("file_upload.upload_file") }}" class="btn btn-warning">Go Back</a>
+        <ul class="list-group mt-3">
+            {% for file in files %}
+                <li class="list-group-item">
+                    <a href="{{ url_for("file_upload.uploaded_file", filename=file) }}" download>{{ file }}</a>
+                    <form action="{{ url_for("file_upload.delete_file", filename=file) }}" method="POST" class="d-inline">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <input type="submit" value="Delete" class="btn btn-danger btn-sm">
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
