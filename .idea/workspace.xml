@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="edbb3385-1d34-4ed0-927f-f9d9cc3817a8" name="Changes" comment="FIRST COMMIT" />
+    <list default="true" id="edbb3385-1d34-4ed0-927f-f9d9cc3817a8" name="Changes" comment="requirements.txt update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +20,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2Z1r0m5jtISxcYo7H8dBFTLpIbq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,6 +43,10 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "G:/Code/Python/MyWebsites",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -56,6 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701600211319</updated>
       <workItem from="1701600213492" duration="207000" />
+      <workItem from="1701600432714" duration="321000" />
     </task>
     <task id="LOCAL-00001" summary="FIRST COMMIT">
       <option name="closed" value="true" />
@@ -65,7 +70,31 @@
       <option name="project" value="LOCAL" />
       <updated>1701600284437</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FIRST COMMIT">
+      <option name="closed" value="true" />
+      <created>1701600473210</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701600473210</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update">
+      <option name="closed" value="true" />
+      <created>1701600625833</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701600625833</updated>
+    </task>
+    <task id="LOCAL-00004" summary="requirements.txt update">
+      <option name="closed" value="true" />
+      <created>1701600753713</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701600753713</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,6 +102,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FIRST COMMIT" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIRST COMMIT" />
+    <MESSAGE value="update" />
+    <MESSAGE value="requirements.txt update" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements.txt update" />
   </component>
 </project>
